@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Rubik's Cube</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+  <link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1 class='title'>
+  Rubik's Cube
+  </h1>
+  <h2 class='subtitle'>
+  Use the keys shown to control the cube. This is designed for people who have used an actual Rubik's Cube, so it may take some getting used to as the moves are not exactly straightforward.
+  </h2>
+  
+  <div class='controls'>
+    <div class='instruction'>
+      <div class='instructionTable'>
+        <table>
+          <tr>
+            <td colspan="2">*</td>
+            <td colspan="2" class="hl">q</td>
+            <td colspan="2" class="hl">w</td>
+            <td colspan="2" class="hl">e</td>
+            <td colspan="2" class="hl">r</td>
+            <td colspan="2" class="hl">t</td>
+            <td colspan="2" class="hl">y</td>
+            <td colspan="2" class="hl">u</td>
+            <td colspan="2" class="hl">i</td>
+            <td colspan="2" class="hl">o</td>
+            <td colspan="2" class="hl">p</td>
+            <td colspan="2">[</td>
+            <td colspan="2">]</td>
+            <td>\</td>
+          </tr>
+          <tr>
+            <td colspan="2">*</td>
+            <td colspan="2">a</td>
+            <td colspan="2" class="hl">s</td>
+            <td colspan="2" class="hl">d</td>
+            <td colspan="2">f</td>
+            <td colspan="2" class="hl">g</td>
+            <td colspan="2" class="hl">h</td>
+            <td colspan="2">j</td>
+            <td colspan="2" class="hl">k</td>
+            <td colspan="2" class="hl">l</td>
+            <td colspan="2">;</td>
+            <td colspan="2">'</td>
+            <td colspan="3">*</td>
+          </tr>
+          <tr>
+            <td colspan="3">*</td>
+            <td colspan="2">z</td>
+            <td colspan="2">x</td>
+            <td colspan="2">c</td>
+            <td colspan="2" class="hl">v</td>
+            <td colspan="2">b</td>
+            <td colspan="2" class="hl">n</td>
+            <td colspan="2">m</td>
+            <td colspan="2">,</td>
+            <td colspan="2">.</td>
+            <td colspan="2">/</td>
+            <td colspan="4">*</td>
+          </tr>
+        </table>
+      </div>
+      <p class='instructionText'>
+      Your keyboard
+      </p>
+    </div>
+    <div class='instruction'>
+      <div class='instructionTable'>
+        <table>
+          <tr>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">←</td>
+            <td colspan="2" class="hl">B</td>
+            <td colspan="2" class="hl">↑</td>
+            <td colspan="2" class="hl">U'</td>
+            <td colspan="2" class="hl">L</td>
+            <td colspan="2" class="hl">R'</td>
+            <td colspan="2" class="hl">U</td>
+            <td colspan="2" class="hl">↑</td>
+            <td colspan="2" class="hl">B'</td>
+            <td colspan="2" class="hl">→</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">D</td>
+            <td colspan="2" class="hl">↓</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">F'</td>
+            <td colspan="2" class="hl">F</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">↓</td>
+            <td colspan="2" class="hl">D'</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="3">-</td>
+          </tr>
+          <tr>
+            <td colspan="3">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">L'</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">R</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="4">-</td>
+          </tr>
+        </table>
+      </div>
+      <p class='instructionText'>
+      Rubik's Cube move notation (arrows = rotate whole cube)
+      </p>
+    </div>
+    <div class='instruction'>
+      <div class='instructionTable'>
+        <table>
+          <tr>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">P</td>
+            <td colspan="2" class="hl">R</td>
+            <td colspan="2" class="hl">M</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2" class="hl">M</td>
+            <td colspan="2" class="hl">R</td>
+            <td colspan="2" class="hl">P</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">R</td>
+            <td colspan="2" class="hl">M</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2" class="hl">I</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">M</td>
+            <td colspan="2" class="hl">R</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="3">-</td>
+          </tr>
+          <tr>
+            <td colspan="3">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">T</td>
+            <td colspan="2">-</td>
+            <td colspan="2" class="hl">T</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="2">-</td>
+            <td colspan="4">-</td>
+          </tr>
+        </table>
+      </div>
+      <p class='instructionText'>
+      Finger placement (Thumb, Index, Middle, Ring, Pinky)
+      </p>
+    </div>
+  </div>
+  
+  <div class='net'>
+    <div class='row'>
+      <div class='spacer'>
+      </div>
+      <div class='face'>
+        <table id='top'>
+          <tr id='top0'>
+            <td id='top00'></td>
+            <td id='top01'></td>
+          </tr>
+          <tr id='top1'>
+            <td id='top10'></td>
+            <td id='top11'></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='face'>
+        <table id='left'>
+          <tr id='left0'>
+            <td id='left00'></td>
+            <td id='left01'></td>
+          </tr>
+          <tr id='left1'>
+            <td id='left10'></td>
+            <td id='left11'></td>
+          </tr>
+        </table>
+      </div>
+      <div class='face'>
+        <table id='front'>
+          <tr id='front0'>
+            <td id='front00'></td>
+            <td id='front01'></td>
+          </tr>
+          <tr id='front1'>
+            <td id='front10'></td>
+            <td id='front11'></td>
+          </tr>
+        </table>
+      </div>
+      <div class='face'>
+        <table id='right'>
+          <tr id='right0'>
+            <td id='right00'></td>
+            <td id='right01'></td>
+          </tr>
+          <tr id='right1'>
+            <td id='right10'></td>
+            <td id='right11'></td>
+          </tr>
+        </table>
+      </div>
+      <div class='face'>
+        <table id='back'>
+          <tr id='back0'>
+            <td id='back00'></td>
+            <td id='back01'></td>
+          </tr >
+          <tr id='back1'>
+            <td id='back10'></td>
+            <td id='back11'></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='spacer'>
+      </div>
+      <div class='face'>
+        <table id='bottom'>
+          <tr id='bottom0'>
+            <td id='bottom00'></td>
+            <td id='bottom01'></td>
+          </tr>
+          <tr id='bottom1'>
+            <td id='bottom10'></td>
+            <td id='bottom11'></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+<script src='script.js'></script>
+</body>
+
+</html>
