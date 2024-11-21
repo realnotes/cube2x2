@@ -1,0 +1,68 @@
+*{
+  font-family:'Noto Sans Mono';
+  margin:0;
+  padding:0;
+}
+body{
+  margin:20px;
+}
+h1{
+  font-size:40px;
+}
+table{
+  border-collapse:collapse;
+}
+td{
+  border:1px solid black;
+  text-align:center;
+}
+td.hl{
+  background-color:#ccc;
+}
+.title{
+  font-size:35px;
+  margin-bottom:5px;
+}
+.subtitle{
+  font-size:17px;
+  font-weight:normal;
+  margin-bottom:15px
+}
+.controls{
+  margin-bottom:33px;
+}
+.instruction{
+  margin-bottom:5px;
+}
+.instructionTable{
+  display:inline-block;
+  width:250px;
+}
+.instructionTable table{
+  width:250px;
+  height:60px;
+  font-size:12px;
+}
+.instructionText{
+  display:inline-block;
+  vertical-align:top;
+  width:40%;
+  font-size:14px;
+}
+.net{
+  border:1px solid black;
+  padding:20px;
+}
+.face{
+  display:inline-block;
+}
+.face table{
+  height:15vw;
+  width:15vw;
+  margin:5px
+}
+.spacer{
+  width:15vw;
+  display:inline-block;
+  margin:5px;
+}
